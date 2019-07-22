@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--validate ma lop hoc-->
+<script>
+    function validateMaLopHoc(lophoc) {
+        let regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+        if (regexp.test(lophoc)){
+            return true;
+        }
+        return false;
+    }
+    // test return true
+    let test = "C0318G";
+    alert(validateMaLopHoc(test));
+    // test return false
+    test = "P0323A";
+    alert(validateMaLopHoc(test));
+</script>
+</body>
+</html>
